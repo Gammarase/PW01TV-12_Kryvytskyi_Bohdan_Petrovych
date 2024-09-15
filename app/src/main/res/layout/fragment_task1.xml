@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Task1Fragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"> <!-- Important to use wrap_content here -->
+
+        <EditText
+            android:id="@+id/input_h"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Введіть H (%)"
+            android:inputType="numberDecimal"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintWidth_percent="0.8"
+            android:layout_marginTop="16dp"/>
+
+        <EditText
+            android:id="@+id/input_c"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Введіть C (%)"
+            android:inputType="numberDecimal"
+            app:layout_constraintTop_toBottomOf="@id/input_h"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintWidth_percent="0.8"
+            android:layout_marginTop="8dp"/>
+
+        <EditText
+            android:id="@+id/input_s"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Введіть S (%)"
+            android:inputType="numberDecimal"
+            app:layout_constraintTop_toBottomOf="@id/input_c"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintWidth_percent="0.8"
+            android:layout_marginTop="8dp"/>
+
+        <EditText
+            android:id="@+id/input_n"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Введіть N (%)"
+            android:inputType="numberDecimal"
+            app:layout_constraintTop_toBottomOf="@id/input_s"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintWidth_percent="0.8"
+            android:layout_marginTop="8dp"/>
+
+        <EditText
+            android:id="@+id/input_o"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Введіть O (%)"
+            android:inputType="numberDecimal"
+            app:layout_constraintTop_toBottomOf="@id/input_n"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintWidth_percent="0.8"
+            android:layout_marginTop="8dp"/>
+
+        <EditText
+            android:id="@+id/input_w"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Введіть W (%)"
+            android:inputType="numberDecimal"
+            app:layout_constraintTop_toBottomOf="@id/input_o"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintWidth_percent="0.8"
+            android:layout_marginTop="8dp"/>
+
+        <EditText
+            android:id="@+id/input_a"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Введіть A (%)"
+            android:inputType="numberDecimal"
+            app:layout_constraintTop_toBottomOf="@id/input_w"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintWidth_percent="0.8"
+            android:layout_marginTop="8dp"/>
+
+        <TextView
+            android:id="@+id/output_result_task1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Результат: "
+            android:textSize="16sp"
+            android:padding="16dp"
+            app:layout_constraintTop_toBottomOf="@id/input_a"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintWidth_percent="0.8"
+            android:layout_marginTop="16dp"/>
+
+        <Button
+            android:id="@+id/button_calculate_task1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Розрахувати"
+            app:layout_constraintTop_toBottomOf="@id/output_result_task1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintWidth_percent="0.6"
+            android:layout_marginTop="16dp"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</android.widget.ScrollView>
